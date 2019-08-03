@@ -2,10 +2,10 @@
 :root {
   --default-width: 72em;
   --color-site: #aa2727;
-  --color-header: #F5F6F7;
+  --color-header: #F5F9FF;
   --color-background: #F5F5F5;
   --color-border-default: #d33030;
-  --spacing: 2.5em;
+  --spacing: 1.5em;
   --font-size-default: 16px;
   --font-size-larger: 18px;
   --font-size-big: 20px;
@@ -39,7 +39,6 @@ body {
 .site-header {
   display: flex;
   border-bottom: 1px solid var(--color-border-default);
-  margin-bottom: var(--spacing), 2.5em;
   overflow: hidden;
   position: sticky;
   position: -webkit-sticky;
@@ -76,6 +75,8 @@ body {
           border: black solid 1px; }
 
 .site-footer {
-  border-top: 1px solid var(--color-border-default);
-  margin-top: var(--spacing);
-  padding-top: calc( var(--spacing-layout) / 2); }
+  border-top: 1px solid var(--color-site);
+  padding-top: calc( var(--spacing) / 2);
+  display: flex;
+  justify-content: center;
+  background: var(--color-header); }

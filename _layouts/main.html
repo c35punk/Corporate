@@ -20,28 +20,21 @@
     <div class="site">
 
         <header class="site-header">
-
             {% if page.home == true %}
             <h1 class="site-title">
                 <a href="{{ site.baseurl }}/">{{site.title}}</a>
             </h1>
             {% else %}
             <p class="site-title">
-                <a href="{{ site.baseurl }}/">{{site.title}} -
+                <a href="{{ site.baseurl }}/">HOME &raquo;
                 {% if page.title %}{{page.title}}{% endif %}</a>
             </p>
             {% endif %}
-
-            {% include navigation.html location="header" %}
-
+            {% include navigation.html %}
         </header>
 
         <main class="site-main">
-
-
-
             {{content}}
-
         </main>
 
         <footer class="site-footer">
@@ -49,6 +42,5 @@
         </footer>
 
     </div>
-    
 </body>
 </html>

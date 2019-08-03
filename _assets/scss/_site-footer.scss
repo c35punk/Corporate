@@ -1,6 +1,10 @@
 .site-footer {
+    border-top: 1px solid var(--color-site);
+    padding-top: calc( var(--spacing) / 2 );
+    display: flex;
+    justify-content: center;
+    background: var(--color-header);
+    & > p {
 
-    border-top: 1px solid var(--color-border-default);
-    margin-top: var(--spacing);
-    padding-top: calc( var(--spacing-layout) / 2 );
+    }
 }
