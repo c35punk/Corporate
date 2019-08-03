@@ -1,2 +1,2 @@
 body {
-  background: #FFF; }
+  background: var(--color-background); }

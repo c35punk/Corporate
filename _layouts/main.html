@@ -16,11 +16,7 @@
     {% endif %}
     <script src="{{ site.baseurl }}/scripts/site.js"></script>
 </head>
-<body class="
-    {% if page.title %}page page-{{ page.title | slugify }}{% endif %}
-    {% if post.title %}post{% endif %}
-    {% if page.home %}home{% endif %}
-">
+<body>
     <div class="site">
 
         <header class="site-header">
@@ -31,7 +27,8 @@
             </h1>
             {% else %}
             <p class="site-title">
-                <a href="{{ site.baseurl }}/">{{site.title}}</a>
+                <a href="{{ site.baseurl }}/">{{site.title}} -
+                {% if page.title %}{{page.title}}{% endif %}</a>
             </p>
             {% endif %}
 
@@ -41,9 +38,7 @@
 
         <main class="site-main">
 
-            {% if page.title %}
-                <h1>{{page.title}}</h1>
-            {% endif %}
+
 
             {{content}}
 

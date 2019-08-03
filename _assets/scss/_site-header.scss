@@ -19,25 +19,38 @@
 
   &-title {
     margin: auto var(--spacing);
-
     font: var(--font-size-huge)/1.9 'Special Elite', cursive;
 
     a {
       display: block;
-      padding: 0.5em 0;
+      text-decoration: none;
+      &:hover {
+        content: "Home";
+      }
     }
   }
 
   &-nav {
     margin: auto var(--spacing);
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: flex-end;
+    margin-left: auto;
+
     ul {
       display: flex;
+
       li {
         margin: calc(var(--spacing) / 3);
         list-style: none;
+
+        a {
+          text-decoration: none;
+
+          a:hover {
+            background: var(--color-site), #aa2727;
+            color: var(--color-background), #F5F5F5;
+          }
+        }
+
+
       }
     }
   }
