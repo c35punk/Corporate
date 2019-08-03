@@ -1,4 +1,4 @@
-@mixin bp($point) {
+@mixin aspect-ratio($point) {
 
     @if $point == desktop-large {
         @media (min-width: 1600px) {

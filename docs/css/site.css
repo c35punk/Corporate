@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Special+Elite&display=swap");
 :root {
-  --default-width: 64em;
+  --default-width: 72em;
   --color-site: #aa2727;
   --color-background: #F5F5F5;
   --color-border-default: #d33030;
@@ -21,8 +21,6 @@ body {
   @media (min-width: 1024px) {
     .site {
       display: grid;
-      grid-template-columns: 3fr 1fr;
-      grid-column-gap: 4em;
       grid-template-areas: "header header header" "main main main" "footer footer footer"; }
       .site .site-header {
         grid-area: header; }
@@ -35,21 +33,26 @@ body {
       .site .site-nav {
         grid-area: nav; } }
 
+.site-contacts {
+  display: flex;
+  justify-content: space-evenly; }
+
 .site-header {
   display: flex;
   border-bottom: 1px solid var(--color-border-default);
-  margin-bottom: var(--spacing);
+  margin-bottom: var(--spacing), 2.5em;
   padding-bottom: calc(var(--spacing) / 2);
   overflow: hidden;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  z-index: 1;
-  background: var(--color-background); }
+  background: var(--color-background);
+  font: var(--font-size-huge)/1.2 "Special Elite", cursive; }
 
 .site-title {
   margin: auto var(--spacing);
-  font: var(--font-size-huge)/1.9 "Special Elite", cursive; }
+  border: var(--color-site) #aa2727 solid;
+  border-radius: 10px; }
   .site-title a {
     display: block;
     text-decoration: none; }
@@ -65,12 +68,13 @@ body {
       margin: calc(var(--spacing) / 3);
       list-style: none; }
       .site-nav ul li a {
-        text-decoration: none; }
-        .site-nav ul li a a:hover {
+        text-decoration: none;
+        font-size: var(--font-size-default); }
+        .site-nav ul li a:hover {
           background: var(--color-site), #aa2727;
           color: var(--color-background), #F5F5F5; }
 
 .site-footer {
   border-top: 1px solid var(--color-border-default);
-  margin-top: var(--spacing-layout-elements);
-  padding-top: calc( var(--spacing-layout-elements) / 2); }
+  margin-top: var(--spacing);
+  padding-top: calc( var(--spacing-layout) / 2); }
