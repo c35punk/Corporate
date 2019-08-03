@@ -35,6 +35,18 @@ body {
 .site-contacts {
   display: flex;
   justify-content: space-evenly; }
+  .site-contacts .left .contact-list {
+    display: flex;
+    flex-direction: column; }
+    .site-contacts .left .contact-list .contact-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: var(--color-site) solid 1px;
+      border-radius: 10px;
+      margin: calc(var(--spacing)/5);
+      border-bottom: transparent; }
 
 .site-header {
   display: flex;
@@ -54,7 +66,7 @@ body {
     display: block;
     text-decoration: none; }
     .site-title a:hover {
-      content: "Home"; }
+      color: var(--color-site); }
 
 .site-nav {
   margin: auto var(--spacing);
@@ -77,6 +89,11 @@ body {
 .site-footer {
   border-top: 1px solid var(--color-site);
   padding-top: calc( var(--spacing) / 2);
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
   display: flex;
   justify-content: center;
   background: var(--color-header); }
+  .site-footer > p {
+    font: var(--font-size-huge)/1.2 "Special Elite", cursive; }

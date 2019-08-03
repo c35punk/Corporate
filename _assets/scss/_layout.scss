@@ -11,10 +11,7 @@ body {
 
 @include aspect-ratio(laptop) {
   display: grid;
-  grid-template-areas:
-          "header header header"
-          "main main main"
-          "footer footer footer";
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
 
   .site-header {
     grid-area: header;
@@ -34,9 +31,25 @@ body {
   }
 }
 
-//CONTACTS
+
 .site-contacts {
   display: flex;
   justify-content: space-evenly;
+  & .left {
 
+  }
+  & .left .contact-list {
+    display: flex;
+    flex-direction: column;
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: var(--color-site) solid 1px;
+      border-radius: 10px;
+      margin: calc(var(--spacing)/5 );
+      border-bottom: transparent;
+    }
+  }
 }

@@ -19,7 +19,6 @@
 
   &-title {
     margin: auto var(--spacing);
-
     border: var(--color-site) #aa2727 solid ;
     border-radius: 10px;
 
@@ -28,7 +27,7 @@
       text-decoration: none;
 
       &:hover {
-        content: "Home";
+        color: var(--color-site);
       }
     }
   }
