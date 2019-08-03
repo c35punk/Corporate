@@ -8,12 +8,11 @@
     display: flex;
     border-bottom: 1px solid var(--color-border-default);
     margin-bottom: var(--spacing),2.5em;
-    padding-bottom: calc(var(--spacing) / 2);
     overflow: hidden;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background: var(--color-background);
+    background: var(--color-header);
     font: var(--font-size-huge)/1.2 'Special Elite', cursive;
 
 
@@ -48,10 +47,13 @@
 
         a {
           text-decoration: none;
-          font-size: var(--font-size-default);
+          font-size: var(--font-size-larger);
+          border: var(--color-background) solid 1px;
+          padding: calc(var(--spacing) / 3);
           &:hover {
-            background: var(--color-site), #aa2727;
-            color: var(--color-background), #F5F5F5;
+            background: var(--color-site);
+            color: var(--color-background);
+            border: black solid 1px;
           }
         }
       }

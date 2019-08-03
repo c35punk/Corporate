@@ -39,7 +39,7 @@ function openTab(tabName) {
         }
 
     } else {
-        var i, x;
+        let i, x;
         x = document.getElementsByClassName("containerTab");
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";

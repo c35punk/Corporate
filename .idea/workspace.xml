@@ -4,20 +4,28 @@
     <list default="true" id="3c5758a6-ddff-42c0-9ea5-3b4f22ffda0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_assets/scss/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_assets/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_assets/scss/_site-footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_site-footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_assets/scss/_site-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_site-header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_assets/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_assets/scss/site.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/site.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-07-09-welcome-to-jekyll.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-07-10-demo.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-07-26-something-new.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/2019/07/09/welcome-to-jekyll.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/2019/07/10/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/2019/07/26/something-new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/about/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/contacts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/contacts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/pages/contacts.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/site.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/feed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/products/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/products/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/scripts/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/scripts/site.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/services/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/services/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/site.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1564768784379</updated>
       <workItem from="1564768788532" duration="9780000" />
-      <workItem from="1564779360551" duration="19281000" />
+      <workItem from="1564779360551" duration="24690000" />
     </task>
     <servers />
   </component>

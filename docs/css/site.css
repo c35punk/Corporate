@@ -2,6 +2,7 @@
 :root {
   --default-width: 72em;
   --color-site: #aa2727;
+  --color-header: #F5F6F7;
   --color-background: #F5F5F5;
   --color-border-default: #d33030;
   --spacing: 2.5em;
@@ -11,27 +12,25 @@
   --font-size-huge: 22px; }
 
 body {
-  background: var(--color-background); }
+  background: var(--color-background);
+  font: var(--font-size-huge)/1.2 "Microsoft JhengHei Light"; }
 
-.site {
+.site-main {
   max-width: var(--default-width);
   margin: 0 auto;
-  padding: 2em;
-  font: var(--font-size-larger)/1.5 var(--color-site), #aa2727; }
-  @media (min-width: 1024px) {
-    .site {
-      display: grid;
-      grid-template-areas: "header header header" "main main main" "footer footer footer"; }
-      .site .site-header {
-        grid-area: header; }
-      .site .site-main {
-        grid-area: main; }
-      .site .site-sidebar {
-        grid-area: sidebar; }
-      .site .site-footer {
-        grid-area: footer; }
-      .site .site-nav {
-        grid-area: nav; } }
+  padding: 2em; }
+
+@media (min-width: 1024px) {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  .site-header {
+    grid-area: header; }
+  .site-main {
+    grid-area: main; }
+  .site-footer {
+    grid-area: footer; }
+  .site-nav {
+    grid-area: nav; } }
 
 .site-contacts {
   display: flex;
@@ -41,12 +40,11 @@ body {
   display: flex;
   border-bottom: 1px solid var(--color-border-default);
   margin-bottom: var(--spacing), 2.5em;
-  padding-bottom: calc(var(--spacing) / 2);
   overflow: hidden;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background: var(--color-background);
+  background: var(--color-header);
   font: var(--font-size-huge)/1.2 "Special Elite", cursive; }
 
 .site-title {
@@ -69,10 +67,13 @@ body {
       list-style: none; }
       .site-nav ul li a {
         text-decoration: none;
-        font-size: var(--font-size-default); }
+        font-size: var(--font-size-larger);
+        border: var(--color-background) solid 1px;
+        padding: calc(var(--spacing) / 3); }
         .site-nav ul li a:hover {
-          background: var(--color-site), #aa2727;
-          color: var(--color-background), #F5F5F5; }
+          background: var(--color-site);
+          color: var(--color-background);
+          border: black solid 1px; }
 
 .site-footer {
   border-top: 1px solid var(--color-border-default);
