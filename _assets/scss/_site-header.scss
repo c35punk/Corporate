@@ -3,7 +3,6 @@
 .site {
 
 
-
   &-header {
     display: flex;
     border-bottom: 1px solid var(--color-border-default);
@@ -19,7 +18,7 @@
 
   &-title {
     margin: auto var(--spacing);
-    border: var(--color-site) #aa2727 solid ;
+    border: var(--color-site) #aa2727 solid;
     border-radius: 10px;
 
     a {
@@ -48,10 +47,13 @@
           font-size: var(--font-size-larger);
           border: var(--color-background) solid 1px;
           padding: calc(var(--spacing) / 3);
+          animation: slideIn 2s backwards ease-in-out;
+
           &:hover {
             background: var(--color-site);
             color: var(--color-background);
             border: black solid 1px;
+            border-radius: 10px;
           }
         }
       }

@@ -32,24 +32,34 @@ body {
 }
 
 
+
 .site-contacts {
   display: flex;
   justify-content: space-evenly;
-  & .left {
-
+  .contact{
+    &-list, &-us, &-us-form {
+      .contact-item, h2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: var(--color-site) solid 1px;
+        border-radius: 10px;
+        margin: calc(var(--spacing) / 5);
+        border-bottom: transparent;
+        padding: calc(var(--spacing) / 5);
+      }
+    }
   }
+
+
   & .left .contact-list {
     display: flex;
     flex-direction: column;
-    .contact-item {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: var(--color-site) solid 1px;
-      border-radius: 10px;
-      margin: calc(var(--spacing)/5 );
-      border-bottom: transparent;
-    }
+
+  }
+
+  & .left, .right, .center {
+    padding: calc(var(--spacing) / 5);
   }
 }

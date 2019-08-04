@@ -1,0 +1,22 @@
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(var(--spacing));
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+//CONTACTS
+
+.contact-item:nth-child(even) {
+    animation: slideIn 1.5s ease-in-out;
+}
+
+
+
+

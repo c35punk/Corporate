@@ -11,6 +11,26 @@
   --font-size-big: 20px;
   --font-size-huge: 22px; }
 
+@-webkit-keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(var(--spacing)); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(var(--spacing)); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.contact-item:nth-child(even) {
+  -webkit-animation: slideIn 1.5s ease-in-out;
+          animation: slideIn 1.5s ease-in-out; }
+
 body {
   background: var(--color-background);
   font: var(--font-size-huge)/1.2 "Microsoft JhengHei Light"; }
@@ -35,18 +55,21 @@ body {
 .site-contacts {
   display: flex;
   justify-content: space-evenly; }
+  .site-contacts .contact-list .contact-item, .site-contacts .contact-list h2, .site-contacts .contact-us .contact-item, .site-contacts .contact-us h2, .site-contacts .contact-us-form .contact-item, .site-contacts .contact-us-form h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: var(--color-site) solid 1px;
+    border-radius: 10px;
+    margin: calc(var(--spacing) / 5);
+    border-bottom: transparent;
+    padding: calc(var(--spacing) / 5); }
   .site-contacts .left .contact-list {
     display: flex;
     flex-direction: column; }
-    .site-contacts .left .contact-list .contact-item {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: var(--color-site) solid 1px;
-      border-radius: 10px;
-      margin: calc(var(--spacing)/5);
-      border-bottom: transparent; }
+  .site-contacts .left, .site-contacts .right, .site-contacts .center {
+    padding: calc(var(--spacing) / 5); }
 
 .site-header {
   display: flex;
@@ -80,11 +103,14 @@ body {
         text-decoration: none;
         font-size: var(--font-size-larger);
         border: var(--color-background) solid 1px;
-        padding: calc(var(--spacing) / 3); }
+        padding: calc(var(--spacing) / 3);
+        -webkit-animation: slideIn 2s backwards ease-in-out;
+                animation: slideIn 2s backwards ease-in-out; }
         .site-nav ul li a:hover {
           background: var(--color-site);
           color: var(--color-background);
-          border: black solid 1px; }
+          border: black solid 1px;
+          border-radius: 10px; }
 
 .site-footer {
   border-top: 1px solid var(--color-site);
