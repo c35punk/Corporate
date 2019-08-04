@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 
+
 .site {
 
 
@@ -10,7 +11,7 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background: var(--color-header);
+    background: var(--color-elements);
     font: var(--font-size-huge)/1.2 'Special Elite', cursive;
 
 
@@ -43,11 +44,10 @@
         list-style: none;
 
         a {
-          text-decoration: none;
           font-size: var(--font-size-larger);
           border: var(--color-background) solid 1px;
           padding: calc(var(--spacing) / 3);
-          animation: slideIn 2s backwards ease-in-out;
+          animation: slideIn 1.5s backwards ease-in-out;
 
           &:hover {
             background: var(--color-site);
@@ -60,4 +60,8 @@
     }
   }
 
+  a {
+    text-decoration: none;
+    color: var(--color-site);
+  }
 }

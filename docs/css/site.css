@@ -2,7 +2,7 @@
 :root {
   --default-width: 72em;
   --color-site: #aa2727;
-  --color-header: #F5F9FF;
+  --color-elements: #F5F9FF;
   --color-background: #F5F5F5;
   --color-border-default: #d33030;
   --spacing: 1.5em;
@@ -53,18 +53,32 @@ body {
     grid-area: nav; } }
 
 .site-contacts {
-  display: flex;
-  justify-content: space-evenly; }
-  .site-contacts .contact-list .contact-item, .site-contacts .contact-list h2, .site-contacts .contact-us .contact-item, .site-contacts .contact-us h2, .site-contacts .contact-us-form .contact-item, .site-contacts .contact-us-form h2 {
-    display: flex;
-    flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+  .site-contacts .contact-list, .site-contacts .contact-us, .site-contacts .contact-us-form {
+    display: grid;
     justify-content: center;
-    align-items: center;
-    border: var(--color-site) solid 1px;
-    border-radius: 10px;
-    margin: calc(var(--spacing) / 5);
-    border-bottom: transparent;
-    padding: calc(var(--spacing) / 5); }
+    align-items: center; }
+    .site-contacts .contact-list .form-pits, .site-contacts .contact-us .form-pits, .site-contacts .contact-us-form .form-pits {
+      display: flex;
+      flex-direction: column; }
+      .site-contacts .contact-list .form-pits-control, .site-contacts .contact-us .form-pits-control, .site-contacts .contact-us-form .form-pits-control {
+        border: var(--color-site) solid 1px;
+        border-radius: 10px;
+        padding: var(--spacing); }
+    .site-contacts .contact-list .contact-item, .site-contacts .contact-list h2, .site-contacts .contact-us .contact-item, .site-contacts .contact-us h2, .site-contacts .contact-us-form .contact-item, .site-contacts .contact-us-form h2 {
+      grid-column: 1 / 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+      align-items: center;
+      border: var(--color-site) solid 1px;
+      border-radius: 10px;
+      border-bottom: transparent;
+      margin: calc(var(--spacing) / 2);
+      padding: calc(var(--spacing) / 5);
+      background: var(--color-elements); }
   .site-contacts .left .contact-list {
     display: flex;
     flex-direction: column; }
@@ -78,7 +92,7 @@ body {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background: var(--color-header);
+  background: var(--color-elements);
   font: var(--font-size-huge)/1.2 "Special Elite", cursive; }
 
 .site-title {
@@ -100,17 +114,20 @@ body {
       margin: calc(var(--spacing) / 3);
       list-style: none; }
       .site-nav ul li a {
-        text-decoration: none;
         font-size: var(--font-size-larger);
         border: var(--color-background) solid 1px;
         padding: calc(var(--spacing) / 3);
-        -webkit-animation: slideIn 2s backwards ease-in-out;
-                animation: slideIn 2s backwards ease-in-out; }
+        -webkit-animation: slideIn 1.5s backwards ease-in-out;
+                animation: slideIn 1.5s backwards ease-in-out; }
         .site-nav ul li a:hover {
           background: var(--color-site);
           color: var(--color-background);
           border: black solid 1px;
           border-radius: 10px; }
+
+.site a {
+  text-decoration: none;
+  color: var(--color-site); }
 
 .site-footer {
   border-top: 1px solid var(--color-site);
@@ -120,6 +137,6 @@ body {
   bottom: 0;
   display: flex;
   justify-content: center;
-  background: var(--color-header); }
+  background: var(--color-elements); }
   .site-footer > p {
     font: var(--font-size-huge)/1.2 "Special Elite", cursive; }
