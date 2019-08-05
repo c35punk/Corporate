@@ -48,14 +48,11 @@ body {
   .site-main {
     grid-area: main; }
   .site-footer {
-    grid-area: footer; }
-  .site-nav {
-    grid-area: nav; } }
+    grid-area: footer; } }
 
 .site-contacts {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr); }
+  grid-template-columns: repeat(3, 1fr); }
   .site-contacts .contact-list, .site-contacts .contact-us, .site-contacts .contact-us-form {
     display: grid;
     justify-content: center;

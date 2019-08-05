@@ -29,16 +29,12 @@ body {
   }
 
 
-  .site-nav {
-    grid-area: nav;
-  }
 }
 
 
 .site-contacts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
 
   .contact {
     &-list, &-us, &-us-form {
