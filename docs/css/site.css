@@ -53,18 +53,22 @@ body {
 .site-contacts {
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
-  .site-contacts .contact-list, .site-contacts .contact-us, .site-contacts .contact-us-form {
+  .site-contacts .contact-list, .site-contacts .contact-us, .site-contacts .contact-us-form, .site-contacts .contact .product-details {
     display: grid;
     justify-content: center;
     align-items: center; }
-    .site-contacts .contact-list .form-pits, .site-contacts .contact-us .form-pits, .site-contacts .contact-us-form .form-pits {
+    .site-contacts .contact-list .form-pits, .site-contacts .contact-us .form-pits, .site-contacts .contact-us-form .form-pits, .site-contacts .contact .product-details .form-pits {
       display: flex;
       flex-direction: column; }
-      .site-contacts .contact-list .form-pits-control, .site-contacts .contact-us .form-pits-control, .site-contacts .contact-us-form .form-pits-control {
+      .site-contacts .contact-list .form-pits .form-control, .site-contacts .contact-us .form-pits .form-control, .site-contacts .contact-us-form .form-pits .form-control, .site-contacts .contact .product-details .form-pits .form-control {
+        border: var(--color-site) solid;
+        border-radius: 10px;
+        margin: var(--spacing); }
+      .site-contacts .contact-list .form-pits-control, .site-contacts .contact-us .form-pits-control, .site-contacts .contact-us-form .form-pits-control, .site-contacts .contact .product-details .form-pits-control {
         border: var(--color-site) solid 1px;
         border-radius: 10px;
         padding: var(--spacing); }
-    .site-contacts .contact-list .contact-item, .site-contacts .contact-list h2, .site-contacts .contact-us .contact-item, .site-contacts .contact-us h2, .site-contacts .contact-us-form .contact-item, .site-contacts .contact-us-form h2 {
+    .site-contacts .contact-list .contact-item, .site-contacts .contact-list h2, .site-contacts .contact-list .product-item, .site-contacts .contact-us .contact-item, .site-contacts .contact-us h2, .site-contacts .contact-us .product-item, .site-contacts .contact-us-form .contact-item, .site-contacts .contact-us-form h2, .site-contacts .contact-us-form .product-item, .site-contacts .contact .product-details .contact-item, .site-contacts .contact .product-details h2, .site-contacts .contact .product-details .product-item {
       grid-column: 1 / 2;
       display: flex;
       flex-direction: column;
