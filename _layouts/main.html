@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ site.description }}</title>
     <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-
-    <title>{{ site.description }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
-    {% if page.css %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/pages/{{ page.css }}.css">
-    {% endif %}
     <script src="{{ site.baseurl }}/scripts/site.js"></script>
 </head>
 <body>
@@ -25,8 +21,7 @@
             </h1>
             {% else %}
             <p class="site-title">
-                <a href="{{ site.baseurl }}/">HOME &raquo;
-                {% if page.title %}{{page.title}}{% endif %}</a>
+                <a href="{{ site.baseurl }}/">Home</a><span> &raquo; {% if page.title %}{{page.title}}{% endif %}</span>
             </p>
             {% endif %}
             {% include navigation.html %}

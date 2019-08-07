@@ -1,3 +1,5 @@
+//BOTTOM TO TOP SLIDE IN ANIMATION
+
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -11,9 +13,9 @@
 }
 
 
-//CONTACTS
+//MAIN
 
-.contact-item:nth-child(even) {
+.inner-item:nth-child(even) {
     animation: slideIn 1.5s ease-in-out;
 }
 

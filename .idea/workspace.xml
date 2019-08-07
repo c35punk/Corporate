@@ -44,6 +44,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -80,7 +81,7 @@
       <workItem from="1564779360551" duration="36776000" />
       <workItem from="1565114277709" duration="55000" />
       <workItem from="1565114358467" duration="31000" />
-      <workItem from="1565114507854" duration="12921000" />
+      <workItem from="1565114507854" duration="18281000" />
     </task>
     <servers />
   </component>

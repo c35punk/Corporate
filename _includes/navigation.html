@@ -2,25 +2,13 @@
 
     <ul>
     {% for item in site.navigation %}
-        <li{% if item.url == page.url %} class="selected"{% endif %}>
+        <li>
             <a href="{{ site.baseurl }}{{ item.url }}">
                 {% if item.icon %}<i class="fas {{ item.icon }}"></i>{% endif %}
                 {{ item.text }}
             </a>
-            {% if item.items %}
-            <ul>
-                {% for subitem in item.items %}
-                    <li{% if subitem.url == page.url %} class="selected"{% endif %}>
-                        <a href="{{ site.baseurl }}{{ subitem.url }}">
-                            {% if subitem.icon %}<i class="fas {{ subitem.icon }}"></i>{% endif %}
-                            {{ subitem.text }}
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
-            {% endif %}
         </li>
     {% endfor %}
     </ul>
-    
+
 </nav>
