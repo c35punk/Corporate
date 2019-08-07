@@ -23,7 +23,7 @@ gulp.task("jekylldev", function() {
 
 // Jekyll
 gulp.task("jekyllprod", function() {
-	return cp.spawn("bundle", ["exec", "jekyll", "build --baseurl /su-jekyll-mycroft"], { stdio: "inherit", shell: true });
+	return cp.spawn("bundle", ["exec", "jekyll", "build --baseurl /Corporate"], { stdio: "inherit", shell: true });
 });
 
 gulp.task("watch", function() {
@@ -34,14 +34,13 @@ gulp.task("watch", function() {
 		}
 	});
 
-	gulp.watch( '_assets/scss/**/*.scss', gulp.series('css') );
+	gulp.watch( '_assets/scss/*.scss', gulp.series('css') );
 
 	gulp.watch(
 		[
 			"./*.html",
 			"./_includes/*.html",
-			"./_layouts/*.html",
-			"./_posts/**/*.*"
+			"./_layouts/*.html"
 		]
 	).on('change', gulp.series('jekylldev', 'css') );
 
