@@ -47,12 +47,12 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\SoftUni\Front End\CSS Advanced\11. Project\Company Website\_assets\scss" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\SoftUni\Front End\CSS Advanced\11. Project\Company Website\_assets\scss\pages" />
       <recent name="D:\Projects\SoftUni\Front End\CSS Advanced\11. Project\Company Website" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\SoftUni\Front End\CSS Advanced\11. Project\Company Website\_assets\scss" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -81,7 +81,7 @@
       <workItem from="1564779360551" duration="36776000" />
       <workItem from="1565114277709" duration="55000" />
       <workItem from="1565114358467" duration="31000" />
-      <workItem from="1565114507854" duration="21056000" />
+      <workItem from="1565114507854" duration="31297000" />
     </task>
     <servers />
   </component>

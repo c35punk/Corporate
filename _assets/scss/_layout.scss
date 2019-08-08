@@ -3,47 +3,63 @@ body {
   font: var(--font-size-larger)/1.2 "Microsoft JhengHei Light";
 }
 
+
 .site-main {
   max-width: var(--default-width);
   margin: 0 auto;
-  padding: 2em;
+  min-height: 570px;
+  padding: var(--spacing);
 }
 
-.contacts, .products {
+.contacts, .products, .services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
 
-.contact {
   .outer-item {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .form-pits {
-      display: flex;
-      flex-direction: column;
-
-      .form-control {
-        border: var(--color-site) solid 1px;
-        border-radius: 10px;
-        padding: calc(var(--spacing) / 5);
-      }
-    }
-
     .inner-item, h2 {
-      grid-column: 1 / 2;
       display: flex;
-      flex-direction: column;
-      justify-content: stretch;
+      width: 12em;
       align-items: center;
+      flex-direction: column;
+      overflow: hidden;
       border: var(--color-site) solid 1px;
       border-radius: 10px;
       border-bottom: transparent;
       margin: calc(var(--spacing) / 2);
       padding: calc(var(--spacing) / 5);
       background: var(--color-elements);
+
+
+      .form-control {
+        border: var(--color-site) solid 1px;
+        border-radius: 10px;
+        padding: calc(var(--spacing) / 5);
+        margin: calc(var(--spacing) / 5);
+      }
+
+      button {
+        background: var(--color-elements);
+        color: #000;
+
+        &:hover {
+          background: var(--color-site);
+          color: var(--color-background);
+          border: black solid 1px;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
+
+
+
+
+
 

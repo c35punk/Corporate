@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Special+Elite&display=swap");
 :root {
-  --default-width: 72em;
+  --default-width: 67.5em;
   --color-site: #aa2727;
   --color-elements: #F5F9FF;
   --color-hover-logo: #aa987F;
@@ -29,8 +29,8 @@
     transform: translateY(0); } }
 
 .inner-item:nth-child(even) {
-  -webkit-animation: slideIn 1.5s ease-in-out;
-          animation: slideIn 1.5s ease-in-out; }
+  -webkit-animation: slideIn 1.2s ease-in-out;
+          animation: slideIn 1.2s ease-in-out; }
 
 .site-title {
   opacity: 1;
@@ -45,35 +45,43 @@ body {
 .site-main {
   max-width: var(--default-width);
   margin: 0 auto;
-  padding: 2em; }
+  min-height: 570px;
+  padding: var(--spacing); }
 
-.contacts, .products {
+.contacts, .products, .services {
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
-
-.contact .outer-item {
-  display: grid;
-  justify-content: center;
-  align-items: center; }
-  .contact .outer-item .form-pits {
-    display: flex;
-    flex-direction: column; }
-    .contact .outer-item .form-pits .form-control {
-      border: var(--color-site) solid 1px;
-      border-radius: 10px;
-      padding: calc(var(--spacing) / 5); }
-  .contact .outer-item .inner-item, .contact .outer-item h2 {
-    grid-column: 1 / 2;
+  .contacts .outer-item, .products .outer-item, .services .outer-item {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
-    align-items: center;
-    border: var(--color-site) solid 1px;
-    border-radius: 10px;
-    border-bottom: transparent;
-    margin: calc(var(--spacing) / 2);
-    padding: calc(var(--spacing) / 5);
-    background: var(--color-elements); }
+    justify-content: center;
+    align-items: center; }
+    .contacts .outer-item .inner-item, .contacts .outer-item h2, .products .outer-item .inner-item, .products .outer-item h2, .services .outer-item .inner-item, .services .outer-item h2 {
+      display: flex;
+      width: 12em;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+      border: var(--color-site) solid 1px;
+      border-radius: 10px;
+      border-bottom: transparent;
+      margin: calc(var(--spacing) / 2);
+      padding: calc(var(--spacing) / 5);
+      background: var(--color-elements); }
+      .contacts .outer-item .inner-item .form-control, .contacts .outer-item h2 .form-control, .products .outer-item .inner-item .form-control, .products .outer-item h2 .form-control, .services .outer-item .inner-item .form-control, .services .outer-item h2 .form-control {
+        border: var(--color-site) solid 1px;
+        border-radius: 10px;
+        padding: calc(var(--spacing) / 5);
+        margin: calc(var(--spacing) / 5); }
+      .contacts .outer-item .inner-item button, .contacts .outer-item h2 button, .products .outer-item .inner-item button, .products .outer-item h2 button, .services .outer-item .inner-item button, .services .outer-item h2 button {
+        background: var(--color-elements);
+        color: #000; }
+        .contacts .outer-item .inner-item button:hover, .contacts .outer-item h2 button:hover, .products .outer-item .inner-item button:hover, .products .outer-item h2 button:hover, .services .outer-item .inner-item button:hover, .services .outer-item h2 button:hover {
+          background: var(--color-site);
+          color: var(--color-background);
+          border: black solid 1px;
+          border-radius: 10px;
+          cursor: pointer; }
 
 .site-header {
   display: flex;
@@ -120,13 +128,12 @@ body {
   color: var(--color-site); }
 
 .site-footer {
-  border-top: 1px solid var(--color-site);
-  padding-top: calc( var(--spacing) / 2);
-  position: sticky;
-  position: -webkit-sticky;
-  bottom: 0;
-  left: 0;
   display: flex;
+  border-top: 1px solid var(--color-site);
+  padding-top: calc(var(--spacing) / 2);
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
   justify-content: center;
   background: var(--color-elements); }
   .site-footer > p {

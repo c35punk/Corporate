@@ -1,16 +1,15 @@
 .site-footer {
-    border-top: 1px solid var(--color-site);
-    padding-top: calc( var(--spacing) / 2 );
-    position: sticky;
-    position: -webkit-sticky;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    background: var(--color-elements);
-    & > p {
-        font: var(--font-size-huge)/1.2 'Special Elite', cursive;
+  display: flex;
+  border-top: 1px solid var(--color-site);
+  padding-top: calc(var(--spacing) / 2);
+  position: sticky;
+  bottom: 0;
+  justify-content: center;
+  background: var(--color-elements);
 
-    }
+  & > p {
+    font: var(--font-size-huge)/1.2 'Special Elite', cursive;
+
+  }
 
 }
