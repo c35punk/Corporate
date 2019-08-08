@@ -19,7 +19,7 @@ This is a corporate website representing a company called PITS - **Professional 
 	* You may take and adopt ideas from other sites, but avoid direct copy / paste of their content &#10004;
 * **Web design**
 	* Using your own web design (creative art work) is **allowed** but **not required** &#10004;
-	* You may use free images, icons and other site elements from Internet &#10060;
+	* You may use free images, icons and other site elements from Internet &#10004;
 	* You may use portions of other site's design, but don't copy / paste them entirely &#10060;
 * **Publish your project live in Internet**
 	* Your website should be **hosted** in [GitHub Pages](https://pages.github.com/) &#10004;
