@@ -1,8 +1,10 @@
+//SITE STYLES
 body {
   background: var(--color-background);
   font: var(--font-size-larger)/1.2 "Microsoft JhengHei Light";
 }
 
+//SITE GRID
 .site {
   margin: 0;
   padding: 0;
@@ -21,9 +23,6 @@ body {
     margin: 0 auto;
     grid-area: siteMain;
     padding: var(--spacing);
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
   }
 
   &-footer {
@@ -31,9 +30,34 @@ body {
   }
 }
 
+//HOME LINK STYLES
+section.home {
+  display: grid;
+  grid-auto-flow: column;
+  height: auto;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
 
-.home, .contacts, .products, .services, .about {
-    max-width: calc(var(--spacing)/3);
+  & > .outer-item {
+    margin: 0 auto;
+    border: var(--color-site) solid 1px;
+    border-radius: 10px;
+    border-bottom: transparent;
+    overflow: hidden;
+    background-size: cover;
+
+    &:nth-child(2) {
+      padding: var(--spacing);
+      margin: var(--spacing);
+    }
+  }
+}
+
+//NAV LINKS STYLES
+.about, .products, .services, .contacts {
+  max-width: calc(var(--spacing) / 3);
+
   .outer-item {
     display: flex;
     flex-direction: column;

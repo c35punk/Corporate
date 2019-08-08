@@ -32,12 +32,6 @@
   -webkit-animation: slideIn 1.2s ease-in-out;
           animation: slideIn 1.2s ease-in-out; }
 
-.site-title {
-  opacity: 1;
-  transform: translateX(-var(--spacing));
-  transition: opacity 0.7s ease-in, transform 0.4s ease-out;
-  transition-delay: 0.5s; }
-
 body {
   background: var(--color-background);
   font: var(--font-size-larger)/1.2 "Microsoft JhengHei Light"; }
@@ -53,21 +47,36 @@ body {
   .site-main {
     margin: 0 auto;
     grid-area: siteMain;
-    padding: var(--spacing);
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); }
+    padding: var(--spacing); }
   .site-footer {
     grid-area: siteFooter; }
 
-.home, .contacts, .products, .services, .about {
-  max-width: calc(var(--spacing)/3); }
-  .home .outer-item, .contacts .outer-item, .products .outer-item, .services .outer-item, .about .outer-item {
+section.home {
+  display: grid;
+  grid-auto-flow: column;
+  height: auto;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center; }
+  section.home > .outer-item {
+    margin: 0 auto;
+    border: var(--color-site) solid 1px;
+    border-radius: 10px;
+    border-bottom: transparent;
+    overflow: hidden;
+    background-size: cover; }
+    section.home > .outer-item:nth-child(2) {
+      padding: var(--spacing);
+      margin: var(--spacing); }
+
+.about, .products, .services, .contacts {
+  max-width: calc(var(--spacing) / 3); }
+  .about .outer-item, .products .outer-item, .services .outer-item, .contacts .outer-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .home .outer-item .inner-item, .home .outer-item h2, .contacts .outer-item .inner-item, .contacts .outer-item h2, .products .outer-item .inner-item, .products .outer-item h2, .services .outer-item .inner-item, .services .outer-item h2, .about .outer-item .inner-item, .about .outer-item h2 {
+    .about .outer-item .inner-item, .about .outer-item h2, .products .outer-item .inner-item, .products .outer-item h2, .services .outer-item .inner-item, .services .outer-item h2, .contacts .outer-item .inner-item, .contacts .outer-item h2 {
       display: flex;
       width: calc(var(--spacing) * 8);
       align-items: center;
@@ -79,15 +88,15 @@ body {
       margin: calc(var(--spacing) / 2);
       padding: calc(var(--spacing) / 5);
       background: var(--color-elements); }
-      .home .outer-item .inner-item .form-control, .home .outer-item h2 .form-control, .contacts .outer-item .inner-item .form-control, .contacts .outer-item h2 .form-control, .products .outer-item .inner-item .form-control, .products .outer-item h2 .form-control, .services .outer-item .inner-item .form-control, .services .outer-item h2 .form-control, .about .outer-item .inner-item .form-control, .about .outer-item h2 .form-control {
+      .about .outer-item .inner-item .form-control, .about .outer-item h2 .form-control, .products .outer-item .inner-item .form-control, .products .outer-item h2 .form-control, .services .outer-item .inner-item .form-control, .services .outer-item h2 .form-control, .contacts .outer-item .inner-item .form-control, .contacts .outer-item h2 .form-control {
         border: var(--color-site) solid 1px;
         border-radius: 10px;
         padding: calc(var(--spacing) / 5);
         margin: calc(var(--spacing) / 5); }
-      .home .outer-item .inner-item button, .home .outer-item h2 button, .contacts .outer-item .inner-item button, .contacts .outer-item h2 button, .products .outer-item .inner-item button, .products .outer-item h2 button, .services .outer-item .inner-item button, .services .outer-item h2 button, .about .outer-item .inner-item button, .about .outer-item h2 button {
+      .about .outer-item .inner-item button, .about .outer-item h2 button, .products .outer-item .inner-item button, .products .outer-item h2 button, .services .outer-item .inner-item button, .services .outer-item h2 button, .contacts .outer-item .inner-item button, .contacts .outer-item h2 button {
         background: var(--color-elements);
         color: #000; }
-        .home .outer-item .inner-item button:hover, .home .outer-item h2 button:hover, .contacts .outer-item .inner-item button:hover, .contacts .outer-item h2 button:hover, .products .outer-item .inner-item button:hover, .products .outer-item h2 button:hover, .services .outer-item .inner-item button:hover, .services .outer-item h2 button:hover, .about .outer-item .inner-item button:hover, .about .outer-item h2 button:hover {
+        .about .outer-item .inner-item button:hover, .about .outer-item h2 button:hover, .products .outer-item .inner-item button:hover, .products .outer-item h2 button:hover, .services .outer-item .inner-item button:hover, .services .outer-item h2 button:hover, .contacts .outer-item .inner-item button:hover, .contacts .outer-item h2 button:hover {
           background: var(--color-site);
           color: var(--color-background);
           border: black solid 1px;
