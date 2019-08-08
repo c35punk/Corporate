@@ -3,17 +3,33 @@ body {
   font: var(--font-size-larger)/1.2 "Microsoft JhengHei Light";
 }
 
+.site {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas:
+          "siteHeader siteHeader siteHeader"
+          "siteMain siteMain siteMain"
+          "siteFooter siteFooter siteFooter";
 
-.site-main {
-  max-width: var(--default-width);
-  margin: 0 auto;
-  min-height: 570px;
-  padding: var(--spacing);
+  &-header {
+    grid-area: siteHeader;
+  }
+
+  &-main {
+    grid-area: siteMain;
+    justify-content: center;
+  }
+
+  &-footer {
+    grid-area: siteFooter;
+  }
 }
 
-.contacts, .products, .services {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
+
+.contacts, .products, .services{
+
 
   .outer-item {
     display: flex;
@@ -23,7 +39,7 @@ body {
 
     .inner-item, h2 {
       display: flex;
-      width: 12em;
+      width: calc(var(--spacing)*8);
       align-items: center;
       flex-direction: column;
       overflow: hidden;

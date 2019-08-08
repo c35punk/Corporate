@@ -42,46 +42,50 @@ body {
   background: var(--color-background);
   font: var(--font-size-larger)/1.2 "Microsoft JhengHei Light"; }
 
-.site-main {
-  max-width: var(--default-width);
-  margin: 0 auto;
-  min-height: 570px;
-  padding: var(--spacing); }
-
-.contacts, .products, .services {
+.site {
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); }
-  .contacts .outer-item, .products .outer-item, .services .outer-item {
+  grid-template-areas: "siteHeader siteHeader siteHeader" "siteMain siteMain siteMain" "siteFooter siteFooter siteFooter"; }
+  .site-header {
+    grid-area: siteHeader; }
+  .site-main {
+    grid-area: siteMain;
+    justify-content: center; }
+  .site-footer {
+    grid-area: siteFooter; }
+
+.contacts .outer-item, .products .outer-item, .services .outer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contacts .outer-item .inner-item, .contacts .outer-item h2, .products .outer-item .inner-item, .products .outer-item h2, .services .outer-item .inner-item, .services .outer-item h2 {
     display: flex;
+    width: calc(var(--spacing)*8);
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .contacts .outer-item .inner-item, .contacts .outer-item h2, .products .outer-item .inner-item, .products .outer-item h2, .services .outer-item .inner-item, .services .outer-item h2 {
-      display: flex;
-      width: 12em;
-      align-items: center;
-      flex-direction: column;
-      overflow: hidden;
+    overflow: hidden;
+    border: var(--color-site) solid 1px;
+    border-radius: 10px;
+    border-bottom: transparent;
+    margin: calc(var(--spacing) / 2);
+    padding: calc(var(--spacing) / 5);
+    background: var(--color-elements); }
+    .contacts .outer-item .inner-item .form-control, .contacts .outer-item h2 .form-control, .products .outer-item .inner-item .form-control, .products .outer-item h2 .form-control, .services .outer-item .inner-item .form-control, .services .outer-item h2 .form-control {
       border: var(--color-site) solid 1px;
       border-radius: 10px;
-      border-bottom: transparent;
-      margin: calc(var(--spacing) / 2);
       padding: calc(var(--spacing) / 5);
-      background: var(--color-elements); }
-      .contacts .outer-item .inner-item .form-control, .contacts .outer-item h2 .form-control, .products .outer-item .inner-item .form-control, .products .outer-item h2 .form-control, .services .outer-item .inner-item .form-control, .services .outer-item h2 .form-control {
-        border: var(--color-site) solid 1px;
+      margin: calc(var(--spacing) / 5); }
+    .contacts .outer-item .inner-item button, .contacts .outer-item h2 button, .products .outer-item .inner-item button, .products .outer-item h2 button, .services .outer-item .inner-item button, .services .outer-item h2 button {
+      background: var(--color-elements);
+      color: #000; }
+      .contacts .outer-item .inner-item button:hover, .contacts .outer-item h2 button:hover, .products .outer-item .inner-item button:hover, .products .outer-item h2 button:hover, .services .outer-item .inner-item button:hover, .services .outer-item h2 button:hover {
+        background: var(--color-site);
+        color: var(--color-background);
+        border: black solid 1px;
         border-radius: 10px;
-        padding: calc(var(--spacing) / 5);
-        margin: calc(var(--spacing) / 5); }
-      .contacts .outer-item .inner-item button, .contacts .outer-item h2 button, .products .outer-item .inner-item button, .products .outer-item h2 button, .services .outer-item .inner-item button, .services .outer-item h2 button {
-        background: var(--color-elements);
-        color: #000; }
-        .contacts .outer-item .inner-item button:hover, .contacts .outer-item h2 button:hover, .products .outer-item .inner-item button:hover, .products .outer-item h2 button:hover, .services .outer-item .inner-item button:hover, .services .outer-item h2 button:hover {
-          background: var(--color-site);
-          color: var(--color-background);
-          border: black solid 1px;
-          border-radius: 10px;
-          cursor: pointer; }
+        cursor: pointer; }
 
 .site-header {
   display: flex;
@@ -131,8 +135,6 @@ body {
   display: flex;
   border-top: 1px solid var(--color-site);
   padding-top: calc(var(--spacing) / 2);
-  position: -webkit-sticky;
-  position: sticky;
   bottom: 0;
   justify-content: center;
   background: var(--color-elements); }
