@@ -32,6 +32,12 @@
   -webkit-animation: slideIn 1.5s ease-in-out;
           animation: slideIn 1.5s ease-in-out; }
 
+.site-title {
+  opacity: 1;
+  transform: translateX(-var(--spacing));
+  transition: opacity 0.7s ease-in, transform 0.4s ease-out;
+  transition-delay: 0.5s; }
+
 body {
   background: var(--color-background);
   font: var(--font-size-larger)/1.2 "Microsoft JhengHei Light"; }
