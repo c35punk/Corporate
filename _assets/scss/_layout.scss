@@ -1,18 +1,18 @@
 //SITE STYLES
 body {
   background: var(--color-background);
-  font: var(--font-size-larger)/1.2 "Microsoft JhengHei Light";
+  font-family:  "Microsoft JhengHei Light", sans-serif;
+  min-height: 100%;
+
 }
 
 //SITE GRID
 .site {
   margin: 0;
   padding: 0;
+
   display: grid;
-  grid-template-areas:
-          "siteHeader"
-          "siteMain"
-          "siteFooter";
+  grid-template-areas: "siteHeader" "siteMain" "siteFooter";
   justify-items: stretch;
 
   &-header {
@@ -20,9 +20,8 @@ body {
   }
 
   &-main {
-    margin: 0 auto;
     grid-area: siteMain;
-    padding: var(--spacing);
+    margin: 0 auto;
   }
 
   &-footer {
@@ -30,33 +29,46 @@ body {
   }
 }
 
-//HOME LINK STYLES
+//HOME PAGE STYLES
 section.home {
   display: grid;
   grid-auto-flow: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 100, 0.6)), url("https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80") no-repeat center center;;
+  background-size: cover;
   height: auto;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
 
   & > .outer-item {
-    margin: 0 auto;
+    margin: var(--spacing) auto;
     border: var(--color-site) solid 1px;
     border-radius: 10px;
     border-bottom: transparent;
     overflow: hidden;
+
     background-size: cover;
 
+    &:nth-child(1) {
+      background: var(--color-elements);
+      height: 80%;
+      width: auto;
+    }
+
     &:nth-child(2) {
+      background: var(--color-elements);
+      opacity: 0.8;
       padding: var(--spacing);
       margin: var(--spacing);
     }
   }
 }
 
-//NAV LINKS STYLES
+//ABOUT PRODUCTS SERVICES CONTACTS STYLES
 .about, .products, .services, .contacts {
-  max-width: calc(var(--spacing) / 3);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 
   .outer-item {
     display: flex;

@@ -1,0 +1,39 @@
+@media (min-width: 320px) {
+  html {
+    font-size: var(--font-size-smallеr)
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: var(--font-size-small)
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: var(--font-size-default)
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: var(--font-size-large)
+
+  }
+}
+
+@media (min-width: 960px) {
+  html {
+    font-size: var(--font-size-larger);
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: var(--font-size-huge)
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: var(--font-size-max)
+  }
+}
