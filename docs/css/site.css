@@ -166,9 +166,9 @@ body {
     align-items: flex-start; }
     .home-top .outer-item:nth-child(1) {
       margin: var(--spacing);
-      grid-column: 1 / 4; }
+      grid-column: 1 / 5; }
     .home-top .outer-item:nth-child(2) {
-      grid-column: 4 / 8;
+      grid-column: 5 / 8;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -187,7 +187,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("https://cdn-image.realsimple.com/sites/default/files/styles/medium_2x/public/penny-tile-ideas-gray-marble-tiles.jpg?itok=AL3uMtaJ&1547837147");
+    background: linear-gradient(rgba(100, 100, 100, 0.6), rgba(190, 190, 190, 0.7)), url("https://cdn-image.realsimple.com/sites/default/files/styles/medium_2x/public/penny-tile-ideas-gray-marble-tiles.jpg?itok=AL3uMtaJ&1547837147") no-repeat center center;
     color: var(--color-home-center);
     background-size: cover; }
     .home-center .outer-item {

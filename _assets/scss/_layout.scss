@@ -31,7 +31,7 @@ body {
 
 
 .home {
-  background: linear-gradient(rgba(2, 0, 0, 0.6), rgba(0, 0, 50, 0.7)), url("https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80") no-repeat center center;;
+  background: linear-gradient(rgba(2, 0, 0, 0.6), rgba(0, 0, 50, 0.7)), url("https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80") no-repeat center center;
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -46,11 +46,11 @@ body {
 
     & .outer-item:nth-child(1) {
       margin: var(--spacing);
-      grid-column: 1 / 4;
+      grid-column: 1 / 5;
     }
 
     & .outer-item:nth-child(2) {
-      grid-column: 4 / 8;
+      grid-column: 5 / 8;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -78,7 +78,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("https://cdn-image.realsimple.com/sites/default/files/styles/medium_2x/public/penny-tile-ideas-gray-marble-tiles.jpg?itok=AL3uMtaJ&1547837147");
+    background: linear-gradient(rgba(100, 100, 100, 0.6), rgba(190, 190, 190, 0.7)), url("https://cdn-image.realsimple.com/sites/default/files/styles/medium_2x/public/penny-tile-ideas-gray-marble-tiles.jpg?itok=AL3uMtaJ&1547837147") no-repeat center center;;
     color: var(--color-home-center);
     background-size: cover;
 & .outer-item {
