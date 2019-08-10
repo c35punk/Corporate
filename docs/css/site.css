@@ -1,11 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Special+Elite&display=swap");
 :root {
-  --color-site: #aa2727;
+  --color-site: #5C67FE;
+  --home-page-font-color: white;
   --color-elements: #F5F9FF;
-  --color-hover-logo: #aa987F;
+  --color-hover-logo: #02fCC0;
   --color-background: #F5F5F5;
-  --color-border-default: #d33030;
+  --color-border-default: #02FC46;
+  --color-home-center: #00022A;
   --spacing: 1.5em;
   --font-size-smallеr: 12px;
   --font-size-small: 14px;
@@ -76,7 +78,7 @@ button {
 .form-control {
   border: var(--color-site) solid 1px;
   border-radius: 10px;
-  padding: calc(var(--spacing) / 5);
+  padding: calc(var(--spacing) / 2);
   margin: calc(var(--spacing) / 5); }
 
 .site-header {
@@ -151,43 +153,57 @@ body {
   .site-footer {
     grid-area: siteFooter; }
 
-section.home {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-flow: column;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 100, 0.6)), url("https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80") no-repeat center center;
+.home {
+  background: linear-gradient(rgba(2, 0, 0, 0.6), rgba(0, 0, 50, 0.7)), url("https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80") no-repeat center center;
   background-size: cover;
   justify-content: center;
-  align-items: center; }
-  section.home > .outer-item {
-    margin: var(--spacing) auto;
-    border: var(--color-site) solid 1px;
-    border-radius: 10px;
-    border-bottom: transparent;
-    overflow: hidden;
-    background-size: cover; }
-    section.home > .outer-item:nth-child(1) {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 100, 0)), url("https://images.unsplash.com/photo-1462121594302-c1ed6b9ab32d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60") no-repeat center center;
-      grid-column: 1 / 3;
-      height: 80%;
-      width: auto; }
-      section.home > .outer-item:nth-child(1) #newsletter {
+  align-items: center;
+  color: white; }
+  .home-top {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: flex-start; }
+    .home-top .outer-item:nth-child(1) {
+      margin: var(--spacing);
+      grid-column: 1 / 4; }
+    .home-top .outer-item:nth-child(2) {
+      grid-column: 4 / 8;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: var(--spacing); }
+      .home-top .outer-item:nth-child(2) .inner-item:first-child {
         display: flex;
-        font-weight: bolder;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        padding: var(--spacing); }
-        section.home > .outer-item:nth-child(1) #newsletter p {
-          color: white; }
-        section.home > .outer-item:nth-child(1) #newsletter p, section.home > .outer-item:nth-child(1) #newsletter input, section.home > .outer-item:nth-child(1) #newsletter button {
-          margin: var(--spacing); }
-    section.home > .outer-item:nth-child(2) {
-      background: var(--color-elements);
-      opacity: 0.8;
-      grid-column: 3 / 6;
-      padding: var(--spacing);
-      margin: var(--spacing); }
+        align-items: center; }
+      .home-top .outer-item:nth-child(2) img {
+        max-width: 100%;
+        height: auto; }
+  .home-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://cdn-image.realsimple.com/sites/default/files/styles/medium_2x/public/penny-tile-ideas-gray-marble-tiles.jpg?itok=AL3uMtaJ&1547837147");
+    color: var(--color-home-center);
+    background-size: cover; }
+    .home-center .outer-item {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap; }
+    .home-center .service-item {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0 var(--spacing);
+      flex-wrap: wrap;
+      flex-direction: column; }
+    .home-center i {
+      margin-right: calc(var(--spacing) / 5); }
 
 .about, .products, .services, .contacts {
   display: flex;
@@ -203,10 +219,14 @@ section.home {
       width: calc(var(--spacing) * 8);
       align-items: center;
       flex-direction: column;
-      overflow: hidden;
-      border: var(--color-site) solid 1px;
-      border-radius: 10px;
-      border-bottom: transparent;
-      margin: calc(var(--spacing) / 2);
-      padding: calc(var(--spacing) / 5);
       background: var(--color-elements); }
+      .about .outer-item h2 img, .about .outer-item .inner-item img, .products .outer-item h2 img, .products .outer-item .inner-item img, .services .outer-item h2 img, .services .outer-item .inner-item img, .contacts .outer-item h2 img, .contacts .outer-item .inner-item img {
+        max-width: 100%;
+        height: auto; }
+
+.item-layout {
+  border: var(--color-site) solid 1px;
+  border-radius: 10px;
+  border-bottom: transparent;
+  margin: calc(var(--spacing) / 2);
+  padding: calc(var(--spacing) / 5); }

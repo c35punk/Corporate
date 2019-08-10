@@ -23,7 +23,7 @@ gulp.task("jekylldev", function() {
 
 // Jekyll
 gulp.task("jekyllprod", function() {
-	return cp.spawn("bundle", ["exec", "jekyll", "build --baseurl"], { stdio: "inherit", shell: true });
+	return cp.spawn("bundle", ["exec", "jekyll", "build --baseurl /Corporate"], { stdio: "inherit", shell: true });
 });
 
 gulp.task("watch", function() {
@@ -45,6 +45,7 @@ gulp.task("watch", function() {
 	).on('change', gulp.series('jekylldev', 'css') );
 
 	gulp.watch( 'docs/**/*.html' ).on('change', browserSync.reload );
+	gulp.watch( 'docs/**/*.js' ).on('change', browserSync.reload );
 });
 
 gulp.task("deploy", gulp.series('jekyllprod', 'css'));
