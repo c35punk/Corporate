@@ -80,13 +80,15 @@ body {
     align-items: center;
     background: linear-gradient(rgba(100, 100, 100, 0.6), rgba(190, 190, 190, 0.7)), url("https://cdn-image.realsimple.com/sites/default/files/styles/medium_2x/public/penny-tile-ideas-gray-marble-tiles.jpg?itok=AL3uMtaJ&1547837147") no-repeat center center;;
     color: var(--color-home-center);
+    font-weight: bolder;
     background-size: cover;
-& .outer-item {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
+
+    & .outer-item {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
     & .service-item {
       display: flex;
@@ -103,7 +105,38 @@ body {
   }
 
   &-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    & .outer-item {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    & .service-item {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 var(--spacing);
+      flex-direction: column;
+    }
+
+    h4 {
+      &:hover {
+        color: var(--color-hover-logo);
+        cursor: pointer;
+      }
+    }
+
+    i {
+      margin-right: calc(var(--spacing) / 5);
+
+    }
   }
 
 
@@ -127,6 +160,7 @@ body {
       align-items: center;
       flex-direction: column;
       background: var(--color-elements);
+
       img {
         max-width: 100%;
         height: auto;
