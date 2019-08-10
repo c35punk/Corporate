@@ -22,7 +22,7 @@
             {% else %}
             <p class="site-title">
                 <a href="{{ site.baseurl }}/">Home</a>
-                <span> &raquo; {% if page.title %}{{page.title}}{% endif %}</span>
+                <span id="site-location"> &raquo; {% if page.title %}{{page.title}}{% endif %}</span>
             </p>
             {% endif %}
             {% include navigation.html %}

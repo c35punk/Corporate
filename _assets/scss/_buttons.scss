@@ -1,0 +1,12 @@
+button {
+  background: var(--color-elements);
+  color: #000;
+
+  &:hover {
+    background: var(--color-site);
+    color: var(--color-background);
+    border: black solid 1px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
