@@ -1,7 +1,7 @@
 {
-  "name": "Mycroft",
+  "name": "Corporate",
   "version": "1.0.0",
-  "description": "Jekyll theme by the best HTML & CSS Course",
+  "description": "PITS - Professional IT Services",
   "main": "gulpfile.js",
   "directories": {
     "doc": "docs"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+git@github.com:kdankov/su-jekyll-mycroft.git"
+    "url": "git+git@github.com:c35punk/Corporate.git"
   },
   "author": "",
   "license": "ISC",

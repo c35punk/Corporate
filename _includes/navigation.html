@@ -4,7 +4,6 @@
     {% for item in site.navigation %}
         <li>
             <a href="{{ site.baseurl }}{{ item.url }}">
-                {% if item.icon %}<i class="fas {{ item.icon }}"></i>{% endif %}
                 {{ item.text }}
             </a>
         </li>
