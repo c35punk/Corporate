@@ -181,9 +181,10 @@ body {
 .item-layout {
   border: var(--color-site) solid 1px;
   border-radius: 10px;
+  overflow: hidden;
   border-bottom: transparent;
   margin: calc(var(--spacing) / 2);
-  padding: calc(var(--spacing) / 5);
+  padding: calc(var(--spacing)/5);
 }
 
 
