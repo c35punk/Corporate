@@ -8,6 +8,7 @@
   --color-background: #F5F5F5;
   --color-border-default: #02FC46;
   --color-home-center: #00022A;
+  --color-resposive-nav: black;
   --spacing: 1.5em;
   --font-size-smallеr: 12px;
   --font-size-small: 14px;
@@ -48,7 +49,7 @@
         margin-right: var(--spacing);
         font-size: calc(var(--font-size-small) / 5); }
         html .site-header .site-nav ul li a {
-          color: black;
+          color: var(--color-resposive-nav);
           font-size: calc(var(--font-size-default)); } }
 
 @media screen and (min-width: 480px) and (max-width: 639px) {
@@ -62,7 +63,7 @@
         margin-right: var(--spacing);
         font-size: calc(var(--font-size-small) / 5); }
         html .site-header .site-nav ul li a {
-          color: black;
+          color: var(--color-resposive-nav);
           font-size: calc(var(--font-size-default)); } }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
@@ -76,7 +77,7 @@
         margin-right: var(--spacing);
         font-size: calc(var(--font-size-small) / 5); }
         html .site-header .site-nav ul li a {
-          color: black;
+          color: var(--color-resposive-nav);
           font-size: calc(var(--font-size-default)); } }
 
 @media screen and (min-width: 768px) and (max-width: 959px) {
@@ -114,9 +115,6 @@ button {
     border: black solid 1px;
     border-radius: 10px;
     cursor: pointer; }
-
-a:hover {
-  opacity: 0.7; }
 
 .form-control {
   border: var(--color-site) solid 1px;
@@ -161,10 +159,6 @@ a:hover {
           color: var(--color-background);
           border: black solid 1px;
           border-radius: 10px; }
-
-.site a {
-  text-decoration: none;
-  color: var(--color-site); }
 
 .site-footer {
   display: flex;
@@ -285,9 +279,9 @@ body {
     align-items: center; }
     .about .outer-item h2, .about .outer-item .inner-item, .products .outer-item h2, .products .outer-item .inner-item, .services .outer-item h2, .services .outer-item .inner-item, .contacts .outer-item h2, .contacts .outer-item .inner-item {
       display: flex;
-      width: calc(var(--spacing) * 8);
-      align-items: center;
       flex-direction: column;
+      align-items: center;
+      width: calc(var(--spacing) * 8);
       background: var(--color-elements); }
       .about .outer-item h2 img, .about .outer-item .inner-item img, .products .outer-item h2 img, .products .outer-item .inner-item img, .services .outer-item h2 img, .services .outer-item .inner-item img, .contacts .outer-item h2 img, .contacts .outer-item .inner-item img {
         max-width: 100%;
@@ -300,3 +294,9 @@ body {
   border-bottom: transparent;
   margin: calc(var(--spacing) / 2);
   padding: calc(var(--spacing)/5); }
+
+a {
+  text-decoration: none;
+  color: var(--color-site); }
+  a:hover {
+    opacity: 0.7; }
