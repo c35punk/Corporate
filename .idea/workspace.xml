@@ -3,13 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="3c5758a6-ddff-42c0-9ea5-3b4f22ffda0d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_assets/scss/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_assets/scss/_layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/product.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/pages/contacts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/contacts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/contacts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/site.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/products/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/products/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/services/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/services/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +70,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Company Website/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -83,6 +95,7 @@
       <workItem from="1565114277709" duration="55000" />
       <workItem from="1565114358467" duration="31000" />
       <workItem from="1565114507854" duration="107604000" />
+      <workItem from="1568833074474" duration="348000" />
     </task>
     <servers />
   </component>
