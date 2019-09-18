@@ -1,5 +1,4 @@
 //BOTTOM TO TOP SLIDE IN ANIMATION
-
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -12,9 +11,7 @@
   }
 }
 
-
 //MAIN
-
 .inner-item:nth-child(even) {
     animation: slideIn 1.2s ease-in-out;
 }

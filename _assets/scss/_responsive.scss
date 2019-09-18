@@ -18,8 +18,9 @@
 
 
             a {
-              color: black;
+              color: var(--color-resposive-nav);
               font-size: calc(var(--font-size-default));
+
             }
           }
         }
@@ -47,7 +48,7 @@
 
 
             a {
-              color: black;
+              color: var(--color-resposive-nav);
               font-size: calc(var(--font-size-default));
             }
           }
@@ -75,7 +76,7 @@
 
 
             a {
-              color: black;
+              color: var(--color-resposive-nav);
               font-size: calc(var(--font-size-default));
             }
           }

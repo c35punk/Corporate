@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c5758a6-ddff-42c0-9ea5-3b4f22ffda0d" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/404.html" afterDir="false" />
@@ -12,12 +13,49 @@
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/products/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/products/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/services/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/services/index.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/_assets/scss/_animation.scss" afterPath="$PROJECT_DIR$/_assets/scss/_animation.scss" />
+      <change beforePath="$PROJECT_DIR$/_assets/scss/_buttons.scss" afterPath="$PROJECT_DIR$/_assets/scss/_buttons.scss" />
+      <change beforePath="$PROJECT_DIR$/_assets/scss/_forms.scss" afterPath="$PROJECT_DIR$/_assets/scss/_forms.scss" />
+      <change beforePath="$PROJECT_DIR$/_assets/scss/_layout.scss" afterPath="$PROJECT_DIR$/_assets/scss/_layout.scss" />
+      <change beforePath="$PROJECT_DIR$/_assets/scss/_responsive.scss" afterPath="$PROJECT_DIR$/_assets/scss/_responsive.scss" />
+      <change beforePath="$PROJECT_DIR$/_assets/scss/_site-footer.scss" afterPath="$PROJECT_DIR$/_assets/scss/_site-footer.scss" />
+      <change beforePath="$PROJECT_DIR$/_assets/scss/_site-header.scss" afterPath="$PROJECT_DIR$/_assets/scss/_site-header.scss" />
+      <change beforePath="$PROJECT_DIR$/_assets/scss/_variables.scss" afterPath="$PROJECT_DIR$/_assets/scss/_variables.scss" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
+      <change beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
+      <change beforePath="$PROJECT_DIR$/docs/404.html" afterPath="$PROJECT_DIR$/docs/404.html" />
+      <change beforePath="$PROJECT_DIR$/docs/about/index.html" afterPath="$PROJECT_DIR$/docs/about/index.html" />
+      <change beforePath="$PROJECT_DIR$/docs/contacts/index.html" afterPath="$PROJECT_DIR$/docs/contacts/index.html" />
+      <change beforePath="$PROJECT_DIR$/docs/css/site.css" afterPath="$PROJECT_DIR$/docs/css/site.css" />
+      <change beforePath="$PROJECT_DIR$/docs/feed.xml" afterPath="$PROJECT_DIR$/docs/feed.xml" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
+      <change beforePath="$PROJECT_DIR$/docs/products/index.html" afterPath="$PROJECT_DIR$/docs/products/index.html" />
+      <change beforePath="$PROJECT_DIR$/docs/services/index.html" afterPath="$PROJECT_DIR$/docs/services/index.html" />
+      <change beforePath="$PROJECT_DIR$/services.html" afterPath="$PROJECT_DIR$/services.html" />
+>>>>>>> 63bef539a8fdb36b7a2ba63d1a1efae3bfada5fa
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -30,6 +68,29 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="427" />
+    <option name="y" value="-13" />
+    <option name="width" value="974" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectId" id="1OsVuRWFwfcCpSDFIOeCBPizsZY" />
   <component name="PropertiesComponent">
@@ -70,6 +131,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Company Website/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -79,6 +141,10 @@
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
+=======
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+>>>>>>> 63bef539a8fdb36b7a2ba63d1a1efae3bfada5fa
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -94,10 +160,43 @@
       <workItem from="1564779360551" duration="36776000" />
       <workItem from="1565114277709" duration="55000" />
       <workItem from="1565114358467" duration="31000" />
+<<<<<<< HEAD
       <workItem from="1565114507854" duration="107604000" />
       <workItem from="1568833074474" duration="348000" />
+=======
+      <workItem from="1565114507854" duration="108207000" />
+      <workItem from="1565522117958" duration="3763000" />
+      <workItem from="1568639374142" duration="5000" />
+>>>>>>> 63bef539a8fdb36b7a2ba63d1a1efae3bfada5fa
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -108,11 +207,31 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

@@ -17,6 +17,7 @@ title: PITS
 email: ldj5@example.com
 description: Professional IT Services
 destination: docs
+<<<<<<< HEAD
 baseurl: "/Corporate" # the subpath of your site, e.g. /blog
 url: "/Corporate" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ldjantov
